@@ -16,8 +16,9 @@ class Celery(celery.Celery):
             # hook into the Celery error handler
             register_signal(client)
 
+
 app = Celery()
 app.config_from_object(config)
-app.control.purge()
+#app.control.purge()
 if __name__ == "__main__":
     app.start()
