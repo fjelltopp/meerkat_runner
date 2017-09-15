@@ -14,9 +14,9 @@ if new_url:
     BROKER_URL = new_url
     CELERY_RESULT_BACKEND = new_url
 
-CELERY_TASK_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'yaml'
 CELERY_RESULT_SERIALIZER = 'json'
-CELERY_ACCEPT_CONTENT = ['json']
+CELERY_ACCEPT_CONTENT = ['json','yaml']
 CELERY_IMPORTS = ('meerkat_abacus.tasks', 'api_background.export_data')
 CELERY_ENABLE_UTC = True
 #CELERYD_MAX_TASKS_PER_CHILD = 1  # To help with memory constraints
