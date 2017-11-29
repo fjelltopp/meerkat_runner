@@ -4,6 +4,6 @@ raven==6.0.0
 nose==1.3.7
 coverage==4.0.3
 pyYAML==3.12
-xmljson
+xmljson==0.1.9
 git+git://github.com/meerkat-code/meerkat_abacus
 git+git://github.com/meerkat-code/meerkat_api
